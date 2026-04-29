@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>出欠表</title>
+
   <style>
     body {
       margin: 0;
@@ -15,6 +16,23 @@
       width: 100%;
       min-width: 800px;
     }
+
+
+.yotei-image-wrap {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.yotei-image {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
     th,
     td {
       border: 1px solid #000;
@@ -41,6 +59,9 @@
       font-size: 18px;
     }
   </style>
+
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-database-compat.js"></script>
@@ -222,6 +243,13 @@
       <tbody></tbody>
     </table>
   </div>
+
+
+<div class="yotei-image-wrap">
+  <img src="yotei.png" alt="予定表" class="yotei-image">
+</div>
+
+
   <div class="controls">
     <input type="text" id="newName" placeholder="名前を入力" />
     <button onclick="addName()">名前を追加</button>
